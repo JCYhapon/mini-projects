@@ -1,0 +1,11 @@
+<main class="min-h-[100vh] p-6 bg-gray-100">
+  <div class="h-[20rem] border rounded shadow-md bg-white p-4 overflow-y-auto">
+    <p class="text-gray-500">{{ messageBox }}</p>
+  </div>
+  
+  <input
+    type="text"
+    class="form-control mt-6 flex justify-center items-center mx-auto border rounded w-[20rem] p-2"
+    (input)="onUpdateMessageBox($event)"
+  />
+</main>
